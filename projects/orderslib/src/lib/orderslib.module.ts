@@ -9,8 +9,12 @@ import { AmexioWidgetModule } from 'amexio-ng-extensions';
 const routes: Routes = [
   {
     path: '',
+    redirectTo: 'all',
+    pathMatch: 'full'
+  },{
+    path: 'all',
     component: OrderslibComponent
-  }
+  },
 ];
 
 @NgModule({
