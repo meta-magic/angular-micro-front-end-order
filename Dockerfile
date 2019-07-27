@@ -12,6 +12,7 @@ RUN chmod -R 777  /var/www/html/order/ui/
 RUN wget https://github.com/meta-magic/angular-micro-front-end-shoppintportal-shell/blob/tar/dist.zip?raw=true
 RUN mv dist.zip?raw=true dist.zip
 RUN unzip dist.zip
+RUN cd dist && ls -la 
 COPY dist/mainshell/modules-orders-module-ngfactory.js /var/www/html/order/ui/
 RUN chmod -R 777  /var/www/html/order/ui/*
 
