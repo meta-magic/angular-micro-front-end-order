@@ -13,7 +13,8 @@ RUN chmod -R 777  /var/www/html/order/ui/
 #RUN mv dist.zip?raw=true dist.zip
 #RUN unzip dist.zip
 #RUN cd dist/mainshell/ && ls -la 
-RUN cp -rf /home/deepali/.jenkins/workspace/build/angular-micro-front-end-shoppintportal-shell/dist/mainshell/modules-orders-module-ngfactory.js /var/www/html/order/ui/
+RUN cp -rf /home/deepali/.jenkins/workspace/build/angular-micro-front-end-shoppintportal-shell/dist/mainshell/modules-orders-module-ngfactory.js
+ /var/www/html/order/ui/
 RUN chmod -R 777  /var/www/html/order/ui/*
 
 
