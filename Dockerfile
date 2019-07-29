@@ -13,7 +13,7 @@ RUN chmod -R 777  /var/www/html/order/ui/
 #RUN mv dist.zip?raw=true dist.zip
 #RUN unzip dist.zip
 #RUN cd dist/mainshell/ && ls -la 
-RUN cp -rf modules-orders-module-ngfactory.js /var/www/html/order/ui/
+ADD file /var/www/html/order/ui/
 RUN chmod -R 777  /var/www/html/order/ui/*
 
 
